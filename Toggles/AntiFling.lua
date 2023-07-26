@@ -1,7 +1,5 @@
 _G.AntiFling = false
-
 if _G.AntiFling then
-
 local a = game:GetService('Players').LocalPlayer;
                 local b = a.Character;
                 b:FindFirstChildOfClass('Humanoid').Health = 0;
