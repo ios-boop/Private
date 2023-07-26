@@ -1,6 +1,6 @@
-local AntiFling = false
+_G.AntiFling = false
 
-if AntiFling = true then
+if _G.AntiFling = true then
 
 local a = game:GetService('Players').LocalPlayer;
                 local b = a.Character;
