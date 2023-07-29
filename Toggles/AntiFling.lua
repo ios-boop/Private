@@ -16,3 +16,5 @@ local a = game:GetService('Players').LocalPlayer;
                 g.Parent = game.Workspace.Players
                 game.Players.LocalPlayer.Character:WaitForChild("BodyEffects")
                 game.Players.LocalPlayer.Character.BodyEffects.BreakingParts:Destroy()
+    end
+end)
