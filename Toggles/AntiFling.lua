@@ -1,5 +1,5 @@
-_G.a = false
-if _G.a then
+_G.aT = false
+if _G.aT then
 local a = game:GetService('Players').LocalPlayer;
                 local b = a.Character;
                 b:FindFirstChildOfClass('Humanoid').Health = 0;
