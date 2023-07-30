@@ -5,7 +5,7 @@ local TextService = game:GetService("TextService");
 local Player = game:GetService("Players").LocalPlayer;
 
 local NotifGui = Instance.new("ScreenGui");
-NotifGui.Name = "AkaliNotif";
+NotifGui.Name = "67fb1562-6406-45b2-a06b-9194b5780eaf";
 NotifGui.Parent = run:IsStudio() and Player.PlayerGui or game:GetService("CoreGui");
 
 local Container = Instance.new("Frame");
