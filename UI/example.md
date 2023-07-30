@@ -20,7 +20,7 @@ local Tab = Window:Tab("<string1>","rbxassetid://<string2>")
 
 --[[
 <string1> - The name of the Tab.
-<string2> - The icon of the Tab (Has to be a roblox asset id)
+<string2> - The icon of the Tab (Has to be a roblox asset id).
 ]]
 ```
 
@@ -32,8 +32,8 @@ Tab1:Button("<string1>", function()
 end)
 
 --[[
-<string1> - The name of the Button
-<function1> - The function when Button is pressed
+<string1> - The name of the Button.
+<function1> - The function when Button is pressed.
 ]]
 ```
 
@@ -56,34 +56,52 @@ end)
 ```
 
 
+## Creating a Slider
+```lua
+Tab1:Slider("<string1>", <value1>,<value2>, function(value)
+    getgenv().<string2> = value
+    pcall(function()
+    <function1> = value
+end)
+
+--[[
+<string1> - The name of the Slider.
+<value1> - The minimum number of the Slider.
+<value2> - The maximum number of the Slider.
+<string2> - The name of the Slider without spaces (You can replace spaces with _).
+<function1> - The properties of the thing you want to make a Slider for.
+]]
+```
+
+
 ## Creating Labels
 
-###Warning label
+Warning label
 ```lua
 Tab:WarningLabel("<string1>")
 
 --[[
-<string1> - The name of the Warning label
+<string1> - The name of the Warning label.
 ]]
 ```
 
 
-###Info label
+Info label
 ```lua
 Tab:InfoLabel("<string1>")
 
 --[[
-<string1> - The name of the Info label
+<string1> - The name of the Info label.
 ]]
 ```
 
 
-###Normal label
+Normal label
 ```lua
 Tab:Label("<string1>")
 
 --[[
-<string1> - The name of the Normal label
+<string1> - The name of the Normal label.
 ]]
 ```
 
