@@ -1,12 +1,12 @@
-local TweenService = game:GetService("TweenService");
-local RunService = game:GetService("RunService");
+local tween = game:GetService("TweenService");
+local run = game:GetService("RunService");
 local TextService = game:GetService("TextService");
 
 local Player = game:GetService("Players").LocalPlayer;
 
 local NotifGui = Instance.new("ScreenGui");
 NotifGui.Name = "AkaliNotif";
-NotifGui.Parent = RunService:IsStudio() and Player.PlayerGui or game:GetService("CoreGui");
+NotifGui.Parent = run:IsStudio() and Player.PlayerGui or game:GetService("CoreGui");
 
 local Container = Instance.new("Frame");
 Container.Name = "Container";
@@ -74,7 +74,7 @@ local function Update()
 				Object[3] = true;
 			end
 		end
-		local NewValue = TweenService:GetValue(Delta, TweenStyle, TweenDirection);
+		local NewValue = tween:GetValue(Delta, TweenStyle, TweenDirection);
 		local CurrentPos = Label.Position;
 		local PreviousBounds = CalculateBounds(PreviousObjects);
 		local TargetPos = UDim2.new(0, 0, 0, PreviousBounds.Y + (Padding * #PreviousObjects));
@@ -85,7 +85,7 @@ local function Update()
 	LastTick = tick();
 end
 
-RunService:BindToRenderStep("UpdateList", 0, Update);
+run:BindToRenderStep("UpdateList", 0, Update);
 
 local TitleSettings = {
 	Font = Enum.Font.GothamSemibold;
@@ -127,7 +127,7 @@ local PropertyTweenOut = {
 
 local function FadeProperty(Object)
 	local Prop = PropertyTweenOut[string.sub(Object.ClassName, 1, 4)];
-	TweenService:Create(Object, TweenInfo.new(0.25, TweenStyle, TweenDirection), {
+	tween:Create(Object, TweenInfo.new(0.25, TweenStyle, TweenDirection), {
 		[Prop] = 1;
 	}):Play();
 end
