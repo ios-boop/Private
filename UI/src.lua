@@ -7,6 +7,7 @@ local input = game:GetService("UserInputService")
 local run = game:GetService("RunService")
 local TextService = game:GetService("TextService")
 local mouse = game.Players.LocalPlayer:GetMouse()
+local Player = game:GetService("Players").LocalPlayer
 local focusing = false
 
 local Utility = {}
