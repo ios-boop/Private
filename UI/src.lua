@@ -1,3 +1,11 @@
+--[[
+
+This UI Library is supported mobile players
+Code from Kavo UI Library
+UI made by Deity
+
+]]
+
 local Library = {}
 
 local tween = game:GetService("TweenService")
@@ -153,7 +161,7 @@ function Library:Create(TitleText)
 	Close.BackgroundTransparency = 1.000
 	Close.Position = UDim2.new(1, -8, 0.5, 0)
 	Close.Size = UDim2.new(0, 14, 0, 14)
-	Close.Image = "rbxassetid://14256525159"
+	Close.Image = "rbxassetid://10884453403"
 	Close.MouseButton1Click:Connect(function()
 		game.TweenService:Create(Close, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), {
 			ImageTransparency = 1
@@ -494,7 +502,7 @@ function Library:Create(TitleText)
 			Icon_2.BackgroundTransparency = 1.000
 			Icon_2.Position = UDim2.new(1, 0, 0, 0)
 			Icon_2.Size = UDim2.new(0, 20, 0, 20)
-			Icon_2.Image = "rbxassetid://14256485207"
+			Icon_2.Image = "rbxassetid://10888474558"
 
 			UIStroke.Name = "UIStroke"
 			UIStroke.Parent = Button
