@@ -25,6 +25,15 @@ local Tab = Window:Tab("<string1>","rbxassetid://<string2>")
 ```
 
 
+## Creating a Section
+Tab:Section("<string1>")
+
+--[[
+<string1> - The name of the Section.
+its optional.
+]]
+```
+
 ## Creating a Button
 ```lua
 Tab:Button("<string1>", function()
