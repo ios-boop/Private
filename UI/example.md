@@ -27,7 +27,7 @@ local Tab = Window:Tab("<string1>","rbxassetid://<string2>")
 
 ## Creating a Button
 ```lua
-Tab1:Button("<string1>", function()
+Tab:Button("<string1>", function()
 	<function1>
 end)
 
@@ -40,7 +40,7 @@ end)
 
 ## Creating a Toggle
 ```lua
-Tab1:Toggle("<string1>", function(s)
+Tab:Toggle("<string1>", function(s)
 	getgenv().<string2> = s
         if <string2> == true then
         <string3>
@@ -58,7 +58,7 @@ end)
 
 ## Creating a Slider
 ```lua
-Tab1:Slider("<string1>", <value1>,<value2>, function(value)
+Tab:Slider("<string1>", <value1>,<value2>, function(value)
     getgenv().<string2> = value
     pcall(function()
     <function1> = value
