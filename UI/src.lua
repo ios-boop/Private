@@ -153,7 +153,7 @@ function Library:Create(TitleText)
 	Close.BackgroundTransparency = 1.000
 	Close.Position = UDim2.new(1, -8, 0.5, 0)
 	Close.Size = UDim2.new(0, 14, 0, 14)
-	Close.Image = "rbxassetid://14256481955"
+	Close.Image = "rbxassetid://14256525159"
 	Close.MouseButton1Click:Connect(function()
 		game.TweenService:Create(Close, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), {
 			ImageTransparency = 1
