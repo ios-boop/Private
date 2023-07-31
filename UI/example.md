@@ -29,6 +29,7 @@ local Tab = Window:Tab("<string1>","rbxassetid://<string2>")
 Tab:Section("<string1>")
 
 --[[
+```lua
 <string1> - The name of the Section.
 its optional.
 ]]
